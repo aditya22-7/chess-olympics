@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="module" src="/render-board.js"></script>
+		<link rel="stylesheet" href="chess.css" />
+		<script src="/socket.io/socket.io.js"></script>
+
+		<script type="module">
+			import { firstBoard } from "./render-board.js";
+			// document
+			// 	.querySelector(".play-btn")
+			// 	.addEventListener("click", () => firstBoard());
+		</script>
+	</head>
+
+	<body>
+		<div class="side-menu">
+			<table class="side-menu-table">
+				<tr class="side-menu-table-row">
+					<td class="play-btn-parent"></td>
+				</tr>
+				<tr class="side-menu-table-row">
+					<td class="play-btn-parent"></td>
+				</tr>
+				<tr class="side-menu-table-row">
+					<td class="play-btn-parent">
+						<button type="button" class="play-btn">Play</button>
+					</td>
+				</tr>
+				<tr class="side-menu-table-row">
+					<td class="play-btn-parent">
+						<button type="button" class="play-btn" id="view-game-btn">
+							View Game
+						</button>
+					</td>
+				</tr>
+				<tr class="side-menu-table-row">
+					<td class="play-btn-parent"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="chess"></div>
+	</body>
+</html>

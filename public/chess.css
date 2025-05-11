@@ -1,0 +1,92 @@
+html,
+body {
+	margin: 0;
+}
+body {
+	display: flex;
+}
+.side-menu {
+	height: 100vh;
+	width: 300px;
+	background-color: black;
+}
+.side-menu-table {
+	padding-top: 100px;
+	width: 100%;
+}
+.side-menu-table-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100px;
+	/* border-bottom: 1px solid whitesmoke; */
+}
+/* .side-menu-table tr td{
+  border-bottom: 2px solid whitesmoke;
+  /* width: 100%; */
+/* height: 70px;    */
+/* } */
+.play-btn-parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.play-btn {
+	width: 200px;
+	height: 70px;
+	font-size: 30px;
+	background-color: rgb(67, 153, 78);
+	border-radius: 5px;
+	border: none;
+}
+.play-btn:hover {
+	cursor: pointer;
+	background-color: darkolivegreen;
+	color: whitesmoke;
+}
+
+#chess {
+	margin-left: 200px;
+	margin-top: 70px;
+	display: flex;
+}
+
+#chess-board-table {
+	background-color: lavenderblush;
+	border: 2px solid rgb(191, 146, 146);
+	/* border-style: solid;
+	border-width: 0.2em; */
+}
+td.black {
+	background-color: rosybrown;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+}
+td.white {
+	background-color: white;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+}
+td.selected {
+	background-color: brown;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	cursor: pointer;
+}
+th.edge {
+	width: 2em;
+	height: 2em;
+	text-align: center;
+	color: slategray;
+}
+td.displayrow {
+	background-color: inherit;
+	width: 1em;
+	height: 2em;
+	text-align: center;
+	color: slategray;
+}
